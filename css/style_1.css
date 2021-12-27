@@ -1,0 +1,20 @@
+.button_delete{
+  position: relative;
+left: 40%;
+transform: translate(-50%, 0);
+width: 50%;
+margin-top: 2rem;
+padding: .2rem;
+border: 1px solid #a6aaab;
+border-radius: 7px;
+}
+.task_selected{
+  background-color: #ff4500;
+  color: #dcdcdc;
+}
+.conteiner{
+margin-top: 2rem;
+margin-left: 2rem;
+margin-right: 2rem;
+border-bottom:1px solid #dcdcdc;
+}

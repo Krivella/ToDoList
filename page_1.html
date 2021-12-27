@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+	<h1>To Do List</h1>
+	<p>Добавление задачи</p>
+	<form name="toDoList" novalidate>
+		<div>
+		<label for="taskName">Название задачи</label>
+		<input id="taskName" type="text" name="taskName" placeholder="Введите задачу" minlength="3" maxlength="20" required>
+		<span class="message">*</span>
+	    </div>
+		
+        <div>
+        <label for="taskDescription">Описание задачи</label>
+		<input id="taskDescription" type="text" name="taskDescription" placeholder="Что нужно сделать?"  minlength="5" maxlength="1000" required>
+		<span class="message">*</span>
+	    </div>
+		
+		<div>
+	    <label for="timeForTask">Срок выполнения задачи</label>
+		<input id="timeForTask" type="datetime-local" name="timeForTask" placeholder="Выполнить к ..." required>
+		<span class="message">*</span>
+	    </div>
+	    <div id="firstButton">
+			<button id="getSomePeople">Добавить участника</button>
+
+		</div>
+
+		<div>
+			<button id="submit">Добавить задачу</button>
+		</div>
+
+	</form>
+<div></div>
+<div class="link"><a id="link" href="page_2.html">Перейти к задачам</a></div>
+		
+
+<script src="js/script.js"></script>
+</body>
+</html>
