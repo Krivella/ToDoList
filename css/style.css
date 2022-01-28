@@ -1,12 +1,16 @@
+body{
+	background-color: rgb(224, 224, 224);
+}
+
 .add{
 position: absolute;
-align-items: center;
+right: 35%;
 }
 .remove{
 	position: relative;
-	margin-left: -50px;
+	margin-left: 370px;
 	margin-top: 12px;
-	font-size: 35px;
+	font-size: 38px;
 	border-radius: 10px;
 }
 

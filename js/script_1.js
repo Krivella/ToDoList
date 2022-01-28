@@ -5,14 +5,15 @@ taskContainer = JSON.parse(taskContainer);
 for(let item of taskContainer){
 	let columnOfTasks = document.querySelector(".task_container");
 	let oneTask = document.createElement("div");
+	oneTask.classList.add("oneTask")
 	oneTask.setAttribute("data-id", i);
 	oneTask.innerHTML=`
 		<div id = "section" class = "container">
 		<h2>${item.title}</h2>
-		<p>Автор:${item.members}</p>
+		<p>Участники:<br>${item.members}</p>
 		</div>
 		<div>
-		<p>Что необходимо сделать:${item.description}</p>
+		<p>${item.description}</p>
 		<p>Выполнить к: </p>
 		<p>${item.date}</p>
 		</div>`;
@@ -34,6 +35,7 @@ button.addEventListener("click", function(){
   for(let section of focus){
     let number= parseInt(section.getAttribute("data-id"));
     taskContainer.splice(number, 1);
+    section.remove();
   }
   localStorage.setItem("tasks", JSON.stringify(taskContainer))
 })
